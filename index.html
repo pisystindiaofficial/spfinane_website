@@ -83,6 +83,7 @@
             </ul>
           </li> -->
           <li><a href="#contact">Contact</a></li>
+          <li><a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -846,6 +847,33 @@ our quick approvals and hassle-free process ensure your journey is smooth and st
     </div>
 
 </footer>
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4 shadow-lg">
+      <div class="modal-header bg-primary text-white rounded-top-4">
+        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4">
+        <div id="loginMessage"></div>
+        <form id="loginForm">
+          <div class="mb-3">
+            <label for="email" class="form-label fw-semibold">Mobile</label>
+            <input type="number" class="form-control" id="email" name="email" placeholder="Enter your mobile number" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label fw-semibold">Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary px-4">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 
   <!-- Scroll Top -->
@@ -864,6 +892,47 @@ our quick approvals and hassle-free process ensure your journey is smooth and st
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    
+  $(document).ready(function() {
+    localStorage.removeItem('jwtToken');
+
+    $("#loginForm").on("submit", function(e) {
+      e.preventDefault();
+      var formData = {
+        mobile: $("#email").val(),
+        password: $("#password").val()
+      };
+
+      $.ajax({
+        url: "http://localhost/spfinance/mobile/login", // <-- change to your actual backend endpoint
+        type: "POST",
+        data: JSON.stringify(formData),
+        contentType: 'application/json', // important
+        dataType: "json",
+        beforeSend: function() {
+          $("#loginMessage").html('<div class="alert alert-info">Logging in...</div>');
+        },
+        success: function(res) {
+          if (res.success) {
+            $("#loginMessage").html(`<div class="alert alert-success">${res.message || 'Login successful!'}</div>`);
+            localStorage.setItem('jwtToken', res.payload.token);
+            
+              window.location.href = "profile.html";
+      
+          } else {
+            $("#loginMessage").html(`<div class="alert alert-danger">${res.message || 'Invalid credentials!'}</div>`);
+          }
+        },
+        error: function(xhr) {
+          $("#loginMessage").html('<div class="alert alert-danger">An error occurred. Please try again.</div>');
+        }
+      });
+    });
+  });
+  </script>
+
 
 </body>
 

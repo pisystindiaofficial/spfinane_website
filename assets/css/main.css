@@ -2004,3 +2004,39 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+#loan-carousel {
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+#loan-carousel .card {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#loan-carousel .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+}
+
+#loan-carousel .btn-primary {
+  background-color: #ffb400;
+  border-color: #ffb400;
+  color: #000;
+  font-weight: 600;
+}
+
+#loan-carousel .btn-primary:hover {
+  background-color: #ffc933;
+  border-color: #ffc933;
+}
+
+#loan-carousel .carousel-control-prev-icon,
+#loan-carousel .carousel-control-next-icon {
+  filter: invert(1);
+}
