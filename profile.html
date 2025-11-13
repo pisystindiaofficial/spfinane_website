@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>SP Enterprises - Simple Quickest Loan Process</title>
+  <meta content="SP Enterprises offers personal loans, business loans, and financial consultation with hassle-free process." name="description">
+  <meta content="loans, finance, business loan, personal loan, SP Enterprises" name="keywords">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Logis
+  * Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  *  Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+    <header id="header" class="header d-flex align-items-center fixed-top" style="background-color:  rgba(14, 29, 52, 0.9);">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+        <!--<a href="index.html" class="logo d-flex align-items-center me-auto"> -->
+            <!--Uncomment the line below if you also wish to use an image logo -->
+        <!--  <img src="assets/img/logo.png" alt=""> -->
+        <!--  <h1 class="sitename">SP Enterprises</h1> -->
+        <!--</a> -->
+        <a href="https://spenterprises.tech/" class="logo d-flex align-items-center me-auto">
+        <div class="logo-animation" style="height: 3.5em;">
+            <lottie-player
+            src="assets/img/spf_logo.json"
+            background="transparent"
+            speed="1"
+            loop autoplay>
+            </lottie-player>
+            </div>
+        </a>
+
+        <nav id="navmenu" class="navmenu" >
+            <ul>
+            <li><a href="profile.html" class="active">Home<br></a></li>
+            <!-- <li><a href="#about">About</a></li> -->
+            <!-- <li><a href="#services">Services</a></li> -->
+            <!-- <li><a href="#testimonials">Reviews</a></li> -->
+            <!-- <li><a href="#faq">Help</a></li> -->
+        
+            <!-- <li><a href="#contact">Contact</a></li> -->
+            <!-- <li><a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Logout</a></li> -->
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <!--<a class="btn-getstarted" href="get-a-quote.html">Get a Quote</a>-->
+
+        </div>
+    </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <!-- <section id="loan-carousel" class="hero section dark-background">
+
+            <img src="assets/img/world-dotted-map.png" alt="" class="hero-bg" data-aos="fade-in">
+
+            <div class="container">
+                <div class="row gy-4 d-flex justify-content-between">
+                <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                    <h2 data-aos="fade-up">Your Loan Dashboard</h2>
+                    <p data-aos="fade-up" data-aos-delay="100">
+                    Track your active and past loans easily. Get a quick view of your loan amount, type, duration,
+                    and more with just a click.
+                    </p>
+                </div>
+
+                <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+                    <div id="loanCardsCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-delay="200">
+
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                        <div class="card text-center p-4 shadow-lg rounded-4">
+                            <h5 class="card-title mb-3">Loan #L00123</h5>
+                            <p><strong>Loan Amount:</strong> ₹2,50,000</p>
+                            <p><strong>Card Number:</strong> 1234 5678 9012</p>
+                            <p><strong>Duration:</strong> 24 Months</p>
+                            <p><strong>Type:</strong> Personal Loan</p>
+                            <p><strong>End Date:</strong> 15 Dec 2026</p>
+                            <button id="detailsBtn1" class="btn btn-primary btn-sm mt-2">More Details</button>
+                        </div>
+                        </div>
+
+                        <div class="carousel-item">
+                        <div class="card text-center p-4 shadow-lg rounded-4">
+                            <h5 class="card-title mb-3">Loan #B00981</h5>
+                            <p><strong>Loan Amount:</strong> ₹5,00,000</p>
+                            <p><strong>Card Number:</strong> 8765 4321 1098</p>
+                            <p><strong>Duration:</strong> 36 Months</p>
+                            <p><strong>Type:</strong> Business Loan</p>
+                            <p><strong>End Date:</strong> 22 Mar 2027</p>
+                            <button id="detailsBtn2" class="btn btn-primary btn-sm mt-2">More Details</button>
+                        </div>
+                        </div>
+
+                        <div class="carousel-item">
+                        <div class="card text-center p-4 shadow-lg rounded-4">
+                            <h5 class="card-title mb-3">Loan #H00452</h5>
+                            <p><strong>Loan Amount:</strong> ₹12,00,000</p>
+                            <p><strong>Card Number:</strong> 5678 3456 7890</p>
+                            <p><strong>Duration:</strong> 60 Months</p>
+                            <p><strong>Type:</strong> Home Loan</p>
+                            <p><strong>End Date:</strong> 01 Jan 2030</p>
+                            <button id="detailsBtn3" class="btn btn-primary btn-sm mt-2">More Details</button>
+                        </div>
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#loanCardsCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#loanCardsCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+
+    </section> -->
+
+    <section class="tabs-section">
+    <div class="container">
+        <h3 class="mb-4 mt-5 text-center">Your Loans</h3>
+
+        <!-- Tabs Navigation -->
+        <ul class="nav nav-tabs" id="loanTabs" role="tablist"></ul>
+
+        <!-- Tabs Content -->
+        <div class="tab-content p-4 bg-white shadow-sm rounded" id="loanTabContent"></div>
+    </div>
+
+  </section>
+
+    <!-- Featured Services Section -->
+  
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-5 col-md-12 footer-about">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <span class="sitename">SP Enterprises</span>
+        </a>
+        <p>SP Enterprises is your trusted partner for loans, financial solutions, and business growth support. We provide reliable services, timely assistance, and personalized solutions to help you achieve your financial goals.</p>
+        <div class="social-links d-flex mt-4">
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>Our Services</h4>
+        <ul>
+          <!--<li><a href="get-a-quote.html?q=Personal Loan">Personal Loans</a></li>-->
+          <!--<li><a href="get-a-quote.html?q=Business Loan">Business Loans</a></li>-->
+          <!--<li><a href="get-a-quote.html?q=Financiall Advisory">Financial Advisory</a></li>-->
+          <!--<li><a href="get-a-quote.html?q=Short Term loan">Short Term Loan</a></li>-->
+          <!--<li><a href="get-a-quote.html?q=Loan Assistance">Loan Assistance</a></li>-->
+          
+           <li><a href="#">Personal Loans</a></li>
+          <li><a href="#">Business Loans</a></li>
+          <li><a href="#">Financial Advisory</a></li>
+          <li><a href="#">Short Term Loan</a></li>
+          <li><a href="#">Loan Assistance</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4>Contact Us</h4>
+        <p>SP Enterprises Office</p>
+        <p>Sr. No 10, Mahatma Phule Vasahat Pune, Maharashtra 411028</p>
+        <p>India</p>
+        <p class="mt-4"><strong>Phone:</strong> <span>+91 98765 43210</span></p>
+        <p><strong>Email:</strong> <span>info@spenterprises.tech</span></p>
+      </div>
+
+    </div>
+  </div>
+
+ <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">SP Enterprises</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">Pisyst India Pvt Ltd</a> Developed by  <a href="https://pisystindia.com/">Pisyst India Pvt Ltd</a>
+      </div>
+    </div>
+
+</footer>
+
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  <!-- <script>
+    const data = {
+      "loans": [
+        {
+          "id": "SPF-00000013",
+          "loan_card_number": "123011011539",
+          "borrower_id": "CUS-000012",
+          "loan_amount": "10000",
+          "duration": "100",
+          "duration_unit": "days",
+          "start_date": "2025-11-01",
+          "end_date": "2026-02-09",
+          "installment_date": "2025-11-01",
+          "loan_status": "processing",
+          "interest_rate": "1",
+          "interest_type": "Daily Collection",
+          "interest_amount": "100",
+          "penalty_rate": "100",
+          "overdue_rate": "100",
+          "penalty_amount": "100",
+          "overdue_amount": "100",
+          "loan_type_id": "Home Loan",
+          "installment": "100",
+          "processing_fee": "100.00",
+          "late_fee": "50",
+          "threshold": "100",
+          "agreement": "LOAN_AGREEMENT_SPF-00000013.pdf",
+          "created": "2025-11-01 15:39:44",
+          "guarantors": [
+            {
+              "name": "Siddhi ",
+              "email": "siddhi@gmail.com",
+              "mobile": "9909898787",
+              "alternate_mobile": "9878787676",
+              "current_address": "Pune, Kharadi",
+              "permanent_address": "Pune, Kharadi",
+              "dob": "1996-02-08",
+              "gender": "Female",
+              "photo": "guarantor_6905dc68f1397_1761991784.png"
+            },
+            {
+              "name": "Siddhi Sai",
+              "email": "siddhi12@gmail.com",
+              "mobile": "9909898700",
+              "alternate_mobile": "9878787654",
+              "current_address": "Pune, Kharadi",
+              "permanent_address": "Pune, Hadapsar",
+              "dob": "1996-02-08",
+              "gender": "Male",
+              "photo": "guarantor_6905dc68f1196_1761991784.png"
+            }
+          ]
+        }
+      ]
+    };
+
+    $(document).ready(function () {
+      const loans = data.loans;
+      let tabsHtml = "";
+      let contentHtml = "";
+
+      loans.forEach((loan, index) => {
+        const activeClass = index === 0 ? "active" : "";
+        const showClass = index === 0 ? "show active" : "";
+
+        // Tabs
+        tabsHtml += `
+          <li class="nav-item" role="presentation">
+            <button class="nav-link ${activeClass}" id="tab-${loan.id}" data-bs-toggle="tab"
+              data-bs-target="#content-${loan.id}" type="button" role="tab">
+              ${loan.id}
+            </button>
+          </li>
+        `;
+
+        // Guarantors section
+        let guarantorsHtml = "";
+        if (loan.guarantors && loan.guarantors.length > 0) {
+          guarantorsHtml += `
+            <h6 class="mt-4 mb-2">Guarantors</h6>
+            <div class="table-responsive">
+              <table class="table table-sm table-bordered align-middle">
+                <thead class="table-light">
+                  <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Mobile</th>
+                    <th>Alternate Mobile</th>
+                    <th>Gender</th>
+                    <th>DOB</th>
+                    <th>Address</th>
+                  </tr>
+                </thead>
+                <tbody>
+          `;
+          loan.guarantors.forEach(g => {
+            guarantorsHtml += `
+              <tr>
+                <td>${g.name}</td>
+                <td>${g.email}</td>
+                <td>${g.mobile}</td>
+                <td>${g.alternate_mobile || '-'}</td>
+                <td>${g.gender}</td>
+                <td>${g.dob}</td>
+                <td>${g.current_address}</td>
+              </tr>
+            `;
+          });
+          guarantorsHtml += `</tbody></table></div>`;
+        } else {
+          guarantorsHtml = `<p class="text-muted mt-3">No guarantors available.</p>`;
+        }
+
+        // Loan content
+        contentHtml += `
+          <div class="tab-pane fade ${showClass}" id="content-${loan.id}" role="tabpanel">
+            <h5 class="mb-3">${loan.loan_type_id}</h5>
+            <p><strong>Loan ID:</strong> ${loan.id}</p>
+            <p><strong>Loan Card Number:</strong> ${loan.loan_card_number}</p>
+            <p><strong>Amount:</strong> ₹${loan.loan_amount}</p>
+            <p><strong>Status:</strong> <span class="badge bg-${getStatusColor(loan.loan_status)}">${loan.loan_status}</span></p>
+            <p><strong>Duration:</strong> ${loan.duration} ${loan.duration_unit}</p>
+            <p><strong>Interest Rate:</strong> ${loan.interest_rate}% (${loan.interest_type})</p>
+            <p><strong>Start Date:</strong> ${loan.start_date}</p>
+            <p><strong>End Date:</strong> ${loan.end_date}</p>
+            <p><strong>Installment:</strong> ₹${loan.installment}</p>
+            <p><strong>Processing Fee:</strong> ₹${loan.processing_fee}</p>
+            ${guarantorsHtml}
+            ${loan.loan_status === "processing"
+              ? `<div class="text-end"><button class="btn btn-success mt-3">Make Payment</button></div>`
+              : ""}
+          </div>
+        `;
+      });
+
+      $("#loanTabs").html(tabsHtml);
+      $("#loanTabContent").html(contentHtml);
+    });
+
+    function getStatusColor(status) {
+      switch (status) {
+        case "processing": return "warning";
+        case "approved": return "success";
+        case "rejected": return "danger";
+        default: return "secondary";
+      }
+    }
+  </script> -->
+<script>
+  $(document).ready(function () {
+    console.log( localStorage.getItem('jwtToken'))
+   $.ajax({
+        url: 'http://localhost/spfinance/mobile/loans',
+        method: 'GET',
+        dataType: 'json',
+        headers: {
+                'Authorization': 'Bearer ' + localStorage.getItem('jwtToken')  // ✅ Attach JWT
+        },
+        success: function (response) {
+            // ✅ Ensure response is valid
+            if (response && response.success === true && response.payload && response.payload.loans && response.payload.loans.length > 0) {
+            renderLoans(response.payload.loans);
+            }
+            // ✅ Case 2: success = true but no loans
+            else if (response && response.success === true && response.payload && (!response.payload.loans || response.payload.loans.length === 0)) {
+            showNoLoansMessage("You have no active loans at the moment. Please check back later or apply for a new loan.");
+            }
+            // ✅ Case 3: success = false with proper error message
+            else if (response && response.success === false && response.error && response.error.message) {
+            showNoLoansMessage(response.error.message);
+            }
+            // ✅ Fallback for any unexpected structure
+            else {
+            showNoLoansMessage("No loan data available.");
+            }
+        },
+        error: function (xhr, status, error) {
+            let message = "Unable to load loan details at the moment. Please try again later.";
+
+            // Try to parse JSON error if backend sends structured message
+            try {
+            const jsonResponse = JSON.parse(xhr.responseText);
+            if (jsonResponse && jsonResponse.error && jsonResponse.error.message) {
+                message = jsonResponse.error.message;
+            }
+            } catch (e) {
+            // ignore parse errors
+            }
+
+            console.error("Error fetching loans:", error);
+            showNoLoansMessage(message);
+        }
+        });
+
+  });
+
+  function renderLoans(loans) {
+    let tabsHtml = "";
+    let contentHtml = "";
+
+    loans.forEach((loan, index) => {
+      const activeClass = index === 0 ? "active" : "";
+      const showClass = index === 0 ? "show active" : "";
+
+      // Tabs
+      tabsHtml += `
+        <li class="nav-item" role="presentation">
+          <button class="nav-link ${activeClass}" id="tab-${loan.id}" data-bs-toggle="tab"
+            data-bs-target="#content-${loan.id}" type="button" role="tab">
+            ${loan.id}
+          </button>
+        </li>
+      `;
+
+      // Guarantors table
+      let guarantorsHtml = "";
+      if (loan.guarantors && loan.guarantors.length > 0) {
+        guarantorsHtml += `
+          <h6 class="mt-4 mb-2">Guarantors</h6>
+          <div class="table-responsive">
+            <table class="table table-sm table-bordered align-middle">
+              <thead class="table-light">
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Mobile</th>
+                  <th>Alternate Mobile</th>
+                  <th>Gender</th>
+                  <th>DOB</th>
+                  <th>Address</th>
+                </tr>
+              </thead>
+              <tbody>
+        `;
+        loan.guarantors.forEach(g => {
+          guarantorsHtml += `
+            <tr>
+              <td>${g.name}</td>
+              <td>${g.email}</td>
+              <td>${g.mobile}</td>
+              <td>${g.alternate_mobile || '-'}</td>
+              <td>${g.gender}</td>
+              <td>${g.dob}</td>
+              <td>${g.current_address}</td>
+            </tr>
+          `;
+        });
+        guarantorsHtml += `</tbody></table></div>`;
+      } else {
+        guarantorsHtml = `<p class="text-muted mt-3">No guarantors available.</p>`;
+      }
+
+      // Loan content
+      contentHtml += `
+        <div class="tab-pane fade ${showClass}" id="content-${loan.id}" role="tabpanel">
+          <h5 class="mb-3">${loan.loan_type_id}</h5>
+          <p><strong>Loan ID:</strong> ${loan.id}</p>
+          <p><strong>Loan Card Number:</strong> ${loan.loan_card_number}</p>
+          <p><strong>Amount:</strong> ₹${loan.loan_amount}</p>
+          <p><strong>Status:</strong> <span class="badge bg-${getStatusColor(loan.loan_status)}">${loan.loan_status}</span></p>
+          <p><strong>Duration:</strong> ${loan.duration} ${loan.duration_unit}</p>
+          <p><strong>Interest Rate:</strong> ${loan.interest_rate}% (${loan.interest_type})</p>
+          <p><strong>Start Date:</strong> ${loan.start_date}</p>
+          <p><strong>End Date:</strong> ${loan.end_date}</p>
+          <p><strong>Installment:</strong> ₹${loan.installment}</p>
+          <p><strong>Processing Fee:</strong> ₹${loan.processing_fee}</p>
+          ${guarantorsHtml}
+         ${loan.loan_status !== "pending"
+            ? `
+                <div class="text-end">
+                <button class="btn btn-success mt-3 make-payment-btn"
+                    data-loan-id="${loan.id}"
+                    data-loan-amount="${loan.amount}">
+                    Repayment Schedule
+                </button>
+                </div>
+            `
+            : ""}
+
+        </div>
+      `;
+    });
+
+    $("#loanTabs").html(tabsHtml);
+    $("#loanTabContent").html(contentHtml);
+
+    // Button click event
+    $(document).on('click', '.make-payment-btn', function() {
+      const loanId = $(this).data('loan-id');
+      alert(`Redirecting to payment for Loan ID: ${loanId}`);
+      // window.location.href = `/payment?loanId=${loanId}`;
+    });
+  }
+
+  function getStatusColor(status) {
+    switch (status) {
+      case "processing": return "warning";
+      case "approved": return "success";
+      case "rejected": return "danger";
+      default: return "secondary";
+    }
+  }
+
+  // ✅ Handles "no loans" scenario
+  function showNoLoansMessage(message) {
+    $("#loanTabs").html("");
+    $("#loanTabContent").html(`
+      <div class="text-center p-5">
+        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_jtbfg2nb.json"
+          background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay></lottie-player>
+        <h5 class="mt-3">${message}</h5>
+        <p class="text-muted">Please check back later or apply for a new loan.</p>
+      </div>
+    `);
+  }
+
+  $(document).on('click', '.make-payment-btn', function() {
+  const loanId = $(this).data('loan-id');
+  const loanAmount = $(this).data('loan-amount');
+  const token = localStorage.getItem('jwtToken');
+
+  if (!token) {
+    alert("Session expired. Please log in again.");
+    window.location.href = "login.html";
+    return;
+  }
+
+      window.location.href = `loans.html?loanId=${encodeURIComponent(loanId)}`;
+
+  
+//   $.ajax({
+//     url: 'http://localhost/spfinance/mobile/repayment_schedule',
+//     method: 'POST',
+//     contentType: 'application/json',
+//     data: JSON.stringify({ loan_id: loanId, amount: loanAmount }),
+//     headers: {
+//       'Authorization': 'Bearer ' + token
+//     },
+//     beforeSend: function() {
+//       $(`button[data-loan-id='${loanId}']`).prop('disabled', true).text('Processing...');
+//     },
+//     success: function(res) {
+//       if (res.success) {
+//          window.location.href = `loans.html?loanId=${encodeURIComponent(loanId)}`;
+//         // You can refresh loan list here if needed
+//       //  window.location.href = "loans.html";
+//       } else {
+//         alert(res.message || "Payment failed.");
+//       }
+//     },
+//     error: function(xhr) {
+//       console.error("Payment Error:", xhr.responseText);
+//       alert("Error occurred while processing payment.");
+//     },
+//     complete: function() {
+//       $(`button[data-loan-id='${loanId}']`).prop('disabled', false).text('Make Payment');
+//     }
+//   });
+});
+</script>
+
+
+</body>
+
+</html>
